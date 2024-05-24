@@ -1,6 +1,6 @@
 # OpenGL - Village Scenario Project
 
-## Screenshot
+## 📱 Screenshot of our village
 
 ![](project_showcase.png)
 
@@ -17,10 +17,61 @@
 <a href="https://www.topcoder.com/members/zamansheikh" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg" alt="zamansheikh" height="30" width="40" /></a>
 </p>
 
-==>>
+
+## 📖 Features
+
+- Day and night mode
+- Rain mode
+- Raining when only sun is not visible or in night mode
 
 
+## ⬇️ Graph Map
+
+For furthur use, calculate the graph x'=0 to x 420 and y'=0 y=530. Window size is 2x for better view. 
+
+## 💬 Contact
+
+Join our [Telegram Channel](https://t.me/decodersfamily) for discussion, announcements, and releases!
+
+## 💖 Sponsors
+
+  --No sponsors
+Campus Saga will be always free and open source for everyone. If you like it, please consider [sponsoring me](https://github.com/sponsors/zamansheikh)!
 
 ## 💲Donate 
 
 <p><a href="https://www.buymeacoffee.com/zamansheikh"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="zamansheikh" /></a></p></br><br>
+
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+
+	
+>**Note**
+
+>For submitting bug reports, feature requests, questions, or any other ideas to improve, please read [CONTRIBUTING.md](https://github.com/zamansheikh/openGL_village/blob/main/CONTRIBUTING.md) for instructions and guidelines first.
+
+
+
+## 🧱 Credits
+
+FreeIcon for Object, Computer Graphics course for Basic. 3D art studio for drawing. 
+
+## 📃 License
+
+[![GitHub](https://img.shields.io/github/license/zamansheikh/Campus-Saga?style=for-the-badge)](https://github.com/zamansheikh/openGL_village/blob/main/LICENSE)
+
+>**Warning**
+
+>Except for the source code licensed under the GPLv3 license,
+>all other parties are prohibited from using Campus Saga's name as a downloader app,
+>and the same is true for Campus Saga's derivatives.
+>Derivatives include but are not limited to forks and unofficial builds.
+
+<div align="right">
+<table><td>
+<a href="#start-of-content">👆 Scroll to top</a>
+</td></table>
+</div>

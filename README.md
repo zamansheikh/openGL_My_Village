@@ -73,7 +73,7 @@ FreeIcon for Object, Computer Graphics course for Basic. 3D art studio for drawi
 
 >Except for the source code licensed under the GPLv3 license,
 >all other parties are prohibited from using OpenGL myVillage's name as a downloader app,
->and the same is true for Campus Saga's derivatives.
+>and the same is true for OpenGL myVillage's derivatives.
 >Derivatives include but are not limited to forks and unofficial builds.
 
 <div align="right">

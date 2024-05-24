@@ -22,6 +22,11 @@
 <a href="https://www.topcoder.com/members/zamansheikh" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg" alt="zamansheikh" height="30" width="40" /></a>
 </p>
 
+## ⬇️ How to run
+
+ - 🔭 Check this tutorila [Campus Saga](https://github.com/zamansheikh/OpenGLWithVsCodeWin-Linux) | GuideLine for Linux and Windows 
+
+
 ## 🔔 Promotions
 
 - 🔭 I’m currently working on [Campus Saga](https://github.com/zamansheikh/Campus-Saga) | Flutter Project

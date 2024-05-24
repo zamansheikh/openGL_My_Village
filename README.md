@@ -24,7 +24,7 @@
 
 ## ⬇️ How to run
 
- - 🔭 Check this tutorila [Campus Saga](https://github.com/zamansheikh/OpenGLWithVsCodeWin-Linux) | GuideLine for Linux and Windows 
+ - 🔭 Check this tutorial [Install and Run OpenGL in 5 minutes](https://github.com/zamansheikh/OpenGLWithVsCodeWin-Linux) | GuideLine for Linux and Windows 
 
 
 ## 🔔 Promotions

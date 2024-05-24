@@ -2,7 +2,7 @@
 
 ## 📱 Screenshot of our village
 
-![](project_showcase.png)
+![](project_showcase_night.png)
 
 ## 💬 Connect with Me
 
@@ -42,7 +42,7 @@ Join our [Telegram Channel](https://t.me/decodersfamily) for discussion, announc
 ## 💖 Sponsors
 
   --No sponsors
-Campus Saga will be always free and open source for everyone. If you like it, please consider [sponsoring me](https://github.com/sponsors/zamansheikh)!
+OpenGL Village will be always free and open source for everyone. If you like it, please consider [sponsoring me](https://github.com/sponsors/zamansheikh)!
 
 ## 💲Donate 
 
@@ -72,7 +72,7 @@ FreeIcon for Object, Computer Graphics course for Basic. 3D art studio for drawi
 >**Warning**
 
 >Except for the source code licensed under the GPLv3 license,
->all other parties are prohibited from using Campus Saga's name as a downloader app,
+>all other parties are prohibited from using OpenGL myVillage's name as a downloader app,
 >and the same is true for Campus Saga's derivatives.
 >Derivatives include but are not limited to forks and unofficial builds.
 

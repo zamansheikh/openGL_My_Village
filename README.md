@@ -2,7 +2,11 @@
 
 ## 📱 Screenshot of our village
 
-![](project_showcase_night.png)
+<div align="center">
+  <img src="project_showcase_day.png" width="50%" />
+  <img src="project_showcase_night.png" width="50%" />
+</div>
+
 
 ## 💬 Connect with Me
 

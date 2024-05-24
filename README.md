@@ -3,8 +3,8 @@
 ## 📱 Screenshot of our village
 
 <div align="center">
-  <img src="project_showcase_day.png" width="45%" style="margin-right:10px;" />
-  <img src="project_showcase_night.png" width="45%" />
+  <img src="project_showcase_day1.png" width="45%" style="margin-right:10px;" />
+  <img src="project_showcase_night1.png" width="45%" />
 </div>
 
 

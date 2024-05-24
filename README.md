@@ -17,6 +17,12 @@
 <a href="https://www.topcoder.com/members/zamansheikh" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/topcoder.svg" alt="zamansheikh" height="30" width="40" /></a>
 </p>
 
+## 🔔 Promotions
+
+- 🔭 I’m currently working on [Campus Saga](https://github.com/zamansheikh/Campus-Saga) | Flutter Project
+
+- 👯 I’m looking to collaborate on [Calcu](https://github.com/zamansheikh/Calcu) | This is my complete project. 
+
 ## 📖 Features
 
 - Day and night mode

@@ -26,6 +26,10 @@
 
  - 🔭 Check this tutorial [Install and Run OpenGL in 5 minutes](https://github.com/zamansheikh/OpenGLWithVsCodeWin-Linux) | GuideLine for Linux and Windows 
 
+## Keyboard Shortcuts
+
+- Press `d` to toggle between day and night modes.
+- Press `Escape` to exit the application.
 
 ## 🔔 Promotions
 

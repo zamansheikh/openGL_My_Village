@@ -3,8 +3,16 @@
 ## 📱 Screenshot of our village
 
 <div align="center">
-  <img src="project_showcase_day1.png" width="45%" style="margin-right:10px;" />
-  <img src="project_showcase_night1.png" width="45%" />
+
+ <div>
+	<img src="openGL_village.jpg" width="45%" style="margin-right:10px;"/> 
+ 	<img src="graph_art.jpg" width="45%" /> 
+ </div>
+ <div>
+	<img src="project_showcase_day1.png" width="45%" style="margin-right:10px;" />
+ 	<img src="project_showcase_night1.png" width="45%" /> 
+ </div>
+
 </div>
 
 

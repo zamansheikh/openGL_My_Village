@@ -8,7 +8,7 @@
 About the project:
 This project is a simple 2D animation of a village scene. The scene includes a river, trees, houses, a boat, a well, and a tubewell. The scene also includes a day/night mode that can be toggled using the 'd' key. During the night, the scene also includes a moon and rain. The boat moves from left to right, and the fish move from right to left. The clouds also move from left to right. The scene is drawn using basic shapes such as rectangles, polygons, and circles. The scene is animated using the OpenGL library in C++.
 This project is created by:
-- Zaman Sheikh(github.com/zamansheikh) | Md. Shamsuzzaman | 211-15-4031
+- Zaman Sheikh(github.com/zamansheikh) | Md. Shamsuzzaman | 211-15-4031 | Team Leader
 - Nafiz | Mohaiminul Islam Nafiz | 211-15-4041
 
 */

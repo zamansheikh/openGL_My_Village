@@ -3,19 +3,17 @@
 ## 📱 Screenshot of our village
 
 <div align="center">
-
- <div>
-	<img src="openGL_village.png" width="45%" style="margin-right:10px;"/> 
- 	<img src="graph_art.png" width="45%" /> 
- </div>
- <div>
-	<img src="project_showcase_day1.png" width="45%" style="margin-right:10px;" />
- 	<img src="project_showcase_night1.png" width="45%" /> 
- </div>
- <div>
-	<img src="project_showcase_night1_rain.png" width="90%" style="margin-right:10px;"/>
- </div>
-
+	<div>
+		<img src="graph_art.png" width="90%" style="margin-right:10px;"/>
+ 	</div>
+ 	<div>
+		<img src="openGL_village.png" width="45%" style="margin-right:10px;"/> 
+ 		<img src="project_showcase_night1_rain.png" width="45%" /> 
+ 	</div>
+ 	<div>
+		<img src="project_showcase_day1.png" width="45%" style="margin-right:10px;" />
+ 		<img src="project_showcase_night1.png" width="45%" /> 
+	</div>
 </div>
 
 

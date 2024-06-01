@@ -5,12 +5,15 @@
 <div align="center">
 
  <div>
-	<img src="openGL_village.jpg" width="45%" style="margin-right:10px;"/> 
- 	<img src="graph_art.jpg" width="45%" /> 
+	<img src="openGL_village.png" width="45%" style="margin-right:10px;"/> 
+ 	<img src="graph_art.png" width="45%" /> 
  </div>
  <div>
 	<img src="project_showcase_day1.png" width="45%" style="margin-right:10px;" />
  	<img src="project_showcase_night1.png" width="45%" /> 
+ </div>
+ <div>
+	<img src="project_showcase_night1_rain.png" width="100%"/>
  </div>
 
 </div>

@@ -13,7 +13,7 @@
  	<img src="project_showcase_night1.png" width="45%" /> 
  </div>
  <div>
-	<img src="project_showcase_night1_rain.png" width="100%"/>
+	<img src="project_showcase_night1_rain.png" width="90%" style="margin-right:10px;"/>
  </div>
 
 </div>

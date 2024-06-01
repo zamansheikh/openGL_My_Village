@@ -38,6 +38,9 @@
 ## Keyboard Shortcuts
 
 - Press `d` to toggle between day and night modes.
+- Press `r` to toggle between rain and no rain modes.
+- Press `Left Arrow` to move the fence door to the left.
+- Press `Right Arrow` to move the fence door to the right.
 - Press `Escape` to exit the application.
 
 ## 🔔 Promotions
@@ -50,12 +53,13 @@
 
 - Day and night mode
 - Rain mode
+- Fence door movement
 - Raining when only sun is not visible or in night mode
 
 
 ## ⬇️ Graph Map
 
-For furthur use, calculate the graph x'=0 to x 420 and y'=0 y=530. Window size is 2x for better view. 
+For furthur use, calculate the graph x'=0 to x 1000 and y'=0 y=800. Window size is 1x for better view. 
 
 ## 💬 Contact
 

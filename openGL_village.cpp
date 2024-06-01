@@ -22,7 +22,8 @@ float cloud2Position = 20, cloud2Speed = 0.11;
 float boatPosition = -110, boatSpeed = 0.2;
 float treeLeafSizeXr = 22, treeLeafSizeYr = 15;
 float tree2LeafSizeXr = 17, tree2LeafSizeYr = 15;
-float tree3LeafSizeXr = 30, tree3LeafSizeYr = 20;
+float tree3LeafSizeXr = 90, tree3LeafSizeYr = 60;
+float tree4LeafSizeXr = 38, tree4LeafSizeYr = 103;
 float fishPosition = 100, fishSpeed = 0.2;
 // Day/Night mode control
 bool isDay = true;
@@ -99,14 +100,11 @@ void fenceAll()
     glRecti(500, 325, 550, 320);
     glRecti(500, 310, 550, 305);
     glPopMatrix();
-    fence(450-frenceDoor);
-    fence(460-frenceDoor);
-    fence(470-frenceDoor);
-    fence(480-frenceDoor);
-    fence(490-frenceDoor);
-    
-
-
+    fence(450 - frenceDoor);
+    fence(460 - frenceDoor);
+    fence(470 - frenceDoor);
+    fence(480 - frenceDoor);
+    fence(490 - frenceDoor);
 }
 
 // ------------------------------------RAIN-------------------------------------------------
@@ -184,7 +182,7 @@ void house1(GLfloat red, GLfloat green, GLfloat blue)
     glVertex2i(95, 370);
     glEnd();
 
-    glBegin(GL_POLYGON);     // third Part
+    glBegin(GL_POLYGON);     // wall
     glColor3ub(46, 139, 87); //
     glVertex2i(102, 357);
     glVertex2i(90, 320);
@@ -194,7 +192,7 @@ void house1(GLfloat red, GLfloat green, GLfloat blue)
     glVertex2i(102, 357);
     glEnd();
 
-    glBegin(GL_POLYGON);       // fourth Part
+    glBegin(GL_POLYGON);       // wall
     glColor3ub(143, 188, 143); //
     glVertex2i(120, 260);
     glVertex2i(154, 265);
@@ -240,7 +238,7 @@ void house2(GLfloat red, GLfloat green, GLfloat blue)
     glVertex2i(160, 360);
     glEnd();
 
-    glBegin(GL_POLYGON);      // Second Part
+    glBegin(GL_POLYGON);      // wall
     glColor3ub(70, 130, 180); // midnight blue
     glVertex2i(150, 310);
     glVertex2i(150, 250);
@@ -248,12 +246,8 @@ void house2(GLfloat red, GLfloat green, GLfloat blue)
     glVertex2i(200, 315);
     glEnd();
 
-    //---------------------------------------Door------------------------------------------
-    glColor3f(red, green, blue); // midnight blue
-    glRecti(165, 290, 180, 247);
-
     //--------------------------------------------------------------------------
-    glBegin(GL_POLYGON);      // Third part
+    glBegin(GL_POLYGON);      // wall
     glColor3ub(95, 158, 160); // midnight blue
     glVertex2i(200, 245);
     glVertex2i(228, 255);
@@ -261,6 +255,10 @@ void house2(GLfloat red, GLfloat green, GLfloat blue)
     glVertex2i(210, 368);
     glVertex2i(200, 320);
     glVertex2i(200, 245);
+
+    //---------------------------------------Door------------------------------------------
+    glColor3f(red, green, blue); // midnight blue
+    glRecti(165, 290, 180, 247);
 
     glEnd();
 
@@ -380,19 +378,25 @@ void tree2()
 void tree3()
 {
     //-------------------------------------Secondary TREE------------------------
-    glColor3ub(139, 69, 19); //
-    glRecti(200, 420, 215, 260);
-    glColor3ub(0, 100, 0);
-    circle(tree3LeafSizeXr, tree3LeafSizeYr, 195, 410);
-    glColor3ub(0, 104, 0);
-    circle(tree3LeafSizeXr, tree3LeafSizeYr, 225, 410);
-    glColor3ub(0, 105, 0);
-    circle(tree3LeafSizeXr, tree3LeafSizeYr, 215, 430);
-    glColor3ub(0, 100, 0);
-    circle(tree3LeafSizeXr, tree3LeafSizeYr, 195, 395);
-    glColor3ub(0, 101, 0);
-    circle(tree3LeafSizeXr, tree3LeafSizeYr, 225, 390);
+    glColor3ub(139, 69, 19); // Tree trunk color
+    glRecti(860, 360, 905, -120);
+
+    glColor3ub(0, 100, 0); // Dark green leaves
+    circle(tree3LeafSizeXr, tree3LeafSizeYr, 845, 330);
+
+    glColor3ub(0, 104, 0); // Slightly lighter green leaves
+    circle(tree3LeafSizeXr, tree3LeafSizeYr, 935, 330);
+
+    glColor3ub(0, 105, 0); // Even lighter green leaves
+    circle(tree3LeafSizeXr, tree3LeafSizeYr, 905, 390);
+
+    glColor3ub(0, 100, 0); // Dark green leaves
+    circle(tree3LeafSizeXr, tree3LeafSizeYr, 845, 285);
+
+    glColor3ub(0, 101, 0); // Medium green leaves
+    circle(tree3LeafSizeXr, tree3LeafSizeYr, 935, 270);
 }
+
 
 void tubewell()
 {
@@ -539,7 +543,6 @@ void cloud2night()
     glPopMatrix();
 }
 
-//-------------------------------------Boat------------------------
 void boat()
 {
     //-------------------------------------------BOAT-------------------------------------------------
@@ -547,120 +550,120 @@ void boat()
     glColor3f(0.0f, 0.0f, 0.0f); // Black
     glTranslatef(boatPosition, 0, 0);
     glBegin(GL_POLYGON);
-    glVertex2i(30, 150);
-    glVertex2i(45, 120);
-    glVertex2i(60, 100);
-    glVertex2i(60, 120);
-    glVertex2i(30, 150);
+    glVertex2i(30, 450); // 150 + 300
+    glVertex2i(45, 420); // 120 + 300
+    glVertex2i(60, 400); // 100 + 300
+    glVertex2i(60, 420); // 120 + 300
+    glVertex2i(30, 450); // 150 + 300
     glEnd();
     glBegin(GL_POLYGON);
-    glVertex2i(60, 120);
-    glVertex2i(60, 100);
-    glVertex2i(90, 95);
-    glVertex2i(120, 100);
-    glVertex2i(125, 120);
-    glVertex2i(60, 120);
+    glVertex2i(60, 420);  // 120 + 300
+    glVertex2i(60, 400);  // 100 + 300
+    glVertex2i(90, 395);  // 95 + 300
+    glVertex2i(120, 400); // 100 + 300
+    glVertex2i(125, 420); // 120 + 300
+    glVertex2i(60, 420);  // 120 + 300
     glEnd();
     glBegin(GL_POLYGON);
-    glVertex2i(125, 120);
-    glVertex2i(120, 100);
-    glVertex2i(135, 115);
-    glVertex2i(150, 150);
-    glVertex2i(125, 120);
+    glVertex2i(125, 420); // 120 + 300
+    glVertex2i(120, 400); // 100 + 300
+    glVertex2i(135, 415); // 115 + 300
+    glVertex2i(150, 450); // 150 + 300
+    glVertex2i(125, 420); // 120 + 300
     glEnd();
     //--------------------------BOAT FLAG----------------------------
     glBegin(GL_POLYGON);
     glColor3ub(173, 216, 230);
-    glVertex2i(153, 180);
-    glVertex2i(160, 210);
-    glVertex2i(161, 230);
-    glVertex2i(160, 250);
-    glVertex2i(155, 265);
-    glVertex2i(147, 277);
-    glVertex2i(137, 288); // end
-    glVertex2i(105, 265);
-    glVertex2i(160, 210);
+    glVertex2i(153, 480); // 180 + 300
+    glVertex2i(160, 510); // 210 + 300
+    glVertex2i(161, 530); // 230 + 300
+    glVertex2i(160, 550); // 250 + 300
+    glVertex2i(155, 565); // 265 + 300
+    glVertex2i(147, 577); // 277 + 300
+    glVertex2i(137, 588); // 288 + 300 // end
+    glVertex2i(105, 565); // 265 + 300
+    glVertex2i(160, 510); // 210 + 300
 
     glEnd();
     glBegin(GL_POLYGON);
     glColor3ub(173, 216, 230);
 
-    glVertex2i(142, 150);
-    glVertex2i(153, 180);
-    glVertex2i(125, 230);
-    glVertex2i(142, 150);
+    glVertex2i(142, 450); // 150 + 300
+    glVertex2i(153, 480); // 180 + 300
+    glVertex2i(125, 530); // 230 + 300
+    glVertex2i(142, 450); // 150 + 300
     glEnd();
     glBegin(GL_POLYGON);
     glColor3ub(173, 216, 230);
-    glVertex2i(125, 120);
-    glVertex2i(142, 150);
-    glVertex2i(130, 210);
-    glVertex2i(125, 120);
+    glVertex2i(125, 420); // 120 + 300
+    glVertex2i(142, 450); // 150 + 300
+    glVertex2i(130, 510); // 210 + 300
+    glVertex2i(125, 420); // 120 + 300
     glEnd();
 
     glColor3ub(139, 69, 19);
-    glRecti(122, 300, 124, 120); // Boat stand
+    glRecti(122, 600, 124, 420); // Boat stand, 300 added to each y value
     glBegin(GL_POLYGON);
     glColor3f(0.55, 0.27, 0.0745); // wood color
-    glVertex2i(125, 120);
-    glVertex2i(123, 140);
-    glVertex2i(117, 158);
-    glVertex2i(113, 165);
-    glVertex2i(105, 170);
-    glVertex2i(90, 172);
-    glVertex2i(90, 120);
-    glVertex2i(125, 120);
+    glVertex2i(125, 420);          // 120 + 300
+    glVertex2i(123, 440);          // 140 + 300
+    glVertex2i(117, 458);          // 158 + 300
+    glVertex2i(113, 465);          // 165 + 300
+    glVertex2i(105, 470);          // 170 + 300
+    glVertex2i(90, 472);           // 172 + 300
+    glVertex2i(90, 420);           // 120 + 300
+    glVertex2i(125, 420);          // 120 + 300
     glEnd();
 
     glEnd();
 
     glBegin(GL_POLYGON);
     glColor3f(0.55, 0.27, 0.0745); // wood color
-    glVertex2i(60, 120);
-    glVertex2i(62, 140);
-    glVertex2i(68, 158);
-    glVertex2i(72, 165);
-    glVertex2i(80, 170);
-    glVertex2i(95, 172);
-    glVertex2i(95, 120);
-    glVertex2i(60, 120);
+    glVertex2i(60, 420);           // 120 + 300
+    glVertex2i(62, 440);           // 140 + 300
+    glVertex2i(68, 458);           // 158 + 300
+    glVertex2i(72, 465);           // 165 + 300
+    glVertex2i(80, 470);           // 170 + 300
+    glVertex2i(95, 472);           // 172 + 300
+    glVertex2i(95, 420);           // 120 + 300
+    glVertex2i(60, 420);           // 120 + 300
 
     glEnd();
 
     //--------------------------BOAT LINE----------------------------
     glBegin(GL_LINE_STRIP);
     glColor3f(0.0f, 0.0f, 0.0f); // Black
-    glVertex2i(68, 158);
-    glVertex2i(137, 288);
-    glVertex2i(137, 283);
+    glVertex2i(68, 458);         // 158 + 300
+    glVertex2i(137, 588);        // 288 + 300
+    glVertex2i(137, 583);        // 283 + 300
 
-    glVertex2i(68, 158);
-    glVertex2i(105, 265);
+    glVertex2i(68, 458);  // 158 + 300
+    glVertex2i(105, 565); // 265 + 300
     glEnd();
     glBegin(GL_LINE_STRIP);
     glColor3f(0.0f, 0.0f, 0.0f); // Black
-    glVertex2i(62, 140);
-    glVertex2i(123, 140);
+    glVertex2i(62, 440);         // 140 + 300
+    glVertex2i(123, 440);        // 140 + 300
     glEnd();
     glBegin(GL_LINE_STRIP);
     glColor3f(0.0f, 0.0f, 0.0f); // Black
-    glVertex2i(68, 158);
-    glVertex2i(117, 158);
+    glVertex2i(68, 458);         // 158 + 300
+    glVertex2i(117, 458);        // 158 + 300
     glEnd();
     glBegin(GL_LINE_STRIP);
     glColor3f(0.0f, 0.0f, 0.0f); // Black
-    glVertex2i(95, 172);
-    glVertex2i(95, 120);
+    glVertex2i(95, 472);         // 172 + 300
+    glVertex2i(95, 420);         // 120 + 300
     glEnd();
     glBegin(GL_LINE_STRIP);
     glColor3f(0.0f, 0.0f, 0.0f); // Black
-    glVertex2i(80, 170);
-    glVertex2i(80, 120);
+    glVertex2i(80, 470);         // 170 + 300
+    glVertex2i(80, 420);         // 120 + 300
     glEnd();
     glBegin(GL_LINE_STRIP);
     glColor3f(0.0f, 0.0f, 0.0f); // Black
-    glVertex2i(110, 168);
-    glVertex2i(110, 120);
+    glVertex2i(110, 468);        // 168 + 300
+    glVertex2i(110, 420);        // 120 + 300
     glEnd();
 
     glPopMatrix();
@@ -703,10 +706,10 @@ void drawFishGroup()
 {
     glPushMatrix();
     glTranslatef(fishPosition, 0, 0);
-    fish(120, 40, 0.5);
-    fish(110, 50, 0.4);
-    fish(100, 40, 0.3);
-    fish(90, 50, 0.6);
+    fish(120, 340, 0.5);
+    fish(110, 350, 0.4);
+    fish(100, 340, 0.3);
+    fish(90, 350, 0.6);
     glPopMatrix();
 }
 
@@ -993,18 +996,13 @@ void drawAll()
     }
     river();
     field();
-
-    glPushMatrix();
-    glTranslatef(0, 300, 0);
     drawFishGroup();
     boat();
-    glPopMatrix();
     fenceAll();
 
     isDay ? cloud1day() : cloud1night();
     isDay ? cloud2day() : cloud2night();
     wingUp ? drawBirdWingsUp() : drawBirdWingsDown();
-
     tree1();
     tree2();
     drawPalmTree(650, 300);
@@ -1029,11 +1027,7 @@ void drawAll()
     house1(0.231, 0.059, 0.016);
     glPopMatrix();
 
-    glPushMatrix();
-    glTranslatef(260, -900, 0);
-    glScalef(3, 3, 0);
     tree3();
-    glPopMatrix();
 
     well();
 
@@ -1119,15 +1113,15 @@ void key(int key, int x, int y)
     switch (key)
     {
     case GLUT_KEY_LEFT:
-        if(frenceDoor > -50.0)
+        if (frenceDoor > -50.0)
         {
             frenceDoor -= 1;
         }
-        
+
         glutPostRedisplay();
         break;
     case GLUT_KEY_RIGHT:
-        if(frenceDoor < 0.5)
+        if (frenceDoor < 0.5)
         {
             frenceDoor += 1;
         }
@@ -1148,7 +1142,7 @@ int main(int argc, char **argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowPosition(1900-1000, 1000-800); 
+    glutInitWindowPosition(1900 - 1000, 1000 - 800);
     glutInitWindowSize(1000, 800); // Set the window size to 1000 x 800
     glutCreateWindow("Village Scenery");
     init();
